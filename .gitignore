@@ -1,0 +1,30 @@
+# Directories
+
+.idea/
+.vs/
+.vscode/
+build/
+dist/
+cmake-build-debug/
+
+# File extensions
+
+*.d
+*.slo
+*.lo
+*.obj
+*.o
+*.so
+*.dylib
+*.dll
+*.gch
+*.mod
+*.smod
+*.pch
+*.lai
+*.la
+*.exe
+*.out
+*.app
+*.a
+*.lib
