@@ -11,7 +11,7 @@ class PythonResource : public alt::IResource::Impl
 public:
     PythonResource(PythonRuntime* runtime, alt::IResource* resource) : runtime(runtime), resource(resource) { }
 
-    alt::IResource* GetResource() const
+    alt::IResource* GetIResource() const
     {
         return resource;
     }

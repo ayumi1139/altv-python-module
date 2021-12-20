@@ -4,3 +4,4 @@
 [submodule "vendors/pybind11"]
 	path = vendors/pybind11
 	url = https://github.com/pybind/pybind11
+	branch = stable

@@ -4,10 +4,15 @@ EXPORT bool altMain(alt::ICore* core)
 {
     alt::ICore::SetInstance(core);
 
-    auto runtime = new PythonRuntime();
-    core->RegisterScriptRuntime("pythonModule", runtime);
+    auto& runtime = PythonRuntime::GetInstance();
+    core->RegisterScriptRuntime("python-module", &runtime);
 
-    core->LogInfo("Loaded python module!");
+    core->LogInfo("Python module : script runtime registered");
 
     return true;
+}
+
+EXPORT uint32_t GetSDKVersion()
+{
+    return alt::ICore::SDK_VERSION;
 }

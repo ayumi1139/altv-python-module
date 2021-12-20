@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.21)
+cmake_minimum_required(VERSION 3.8)
 project(python-module)
 
 set(PROJECT_MODULE_NAME python-module)
@@ -24,7 +24,4 @@ include_directories(
 
 link_libraries("${Python3_LIBRARIES}")
 
-add_library(
-        ${PROJECT_MODULE_NAME} SHARED
-        ${PROJECT_SOURCE_FILES}
-)
+add_library(${PROJECT_MODULE_NAME} SHARED ${PROJECT_SOURCE_FILES})
