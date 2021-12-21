@@ -13,12 +13,12 @@ class PythonRuntime : public alt::IScriptRuntime
 public:
     PythonRuntime();
 
-    void OnTick() override;
-    void OnDispose() override;
-
     alt::IResource::Impl* CreateImpl(alt::IResource* resource) override;
 
     void DestroyImpl(alt::IResource::Impl* impl) override;
+
+    void OnTick() override;
+    void OnDispose() override;
 
     PythonResource* GetResource(alt::IResource* resource)
     {
